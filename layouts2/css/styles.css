@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+:root{
+    --main-color-bg: #E5E5E5;;
+    --main-text-color: rgba(0, 0, 0, 1);
+    --sb-color: rgba(213, 196, 178, 1);
+    --nav-color: rgba(255, 255, 255, 1);
+    
+}
+
+body{
+    font-family: 'Helvetica', sans-serif;
+    min-height: 1000px;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--main-text-color);
+    color: var(--nav-color);
+    text-transform: uppercase;
+}
+.nav{
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list li{
+    padding: 24px 10px;
+}
+
+.nav-link{
+    color: var(--nav-color);
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar{
+    width: 240px;
+    /* min-height: 920px; */
+    border-right: 1px solid var(--sb-color);
+}
+
+.sidebar ul{
+    padding: 32px 54px 0 48px;
+    width: 100%;
+}
+
+.sidebar li{
+    padding-bottom: 16px;
+    min-width: max-content;
+}
+
+.sidebar a{
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.section-title{
+    text-transform: uppercase;
+    color: var(--sb-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 24px 0;
+    padding-left: 48px;
+    position: relative;
+    
+}
+
+.section-title:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--sb-color);
+    display: block;
+    margin-top: 24px;
+    position: absolute;
+    left: 0;
+}
+
+.section-text{
+    padding: 24px  48px;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.section-text p{
+    padding-bottom: 24px;
+}
